@@ -1,0 +1,15 @@
+[package]
+name = "feeding_heroes"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.8.4"
+serde = { version = "1.0.219", features = ["derive"] }
+serde_json = "1.0.140"
+tokio = { version = "1.46.1", features = ["full"] }
+tracing-subscriber = "0.3.19"
+reqwest = { version = "0.12.22", features = ["json"] }
+thiserror = "2.0.12"
+once_cell = "1.21.3"
+paste = "1.0.15"
