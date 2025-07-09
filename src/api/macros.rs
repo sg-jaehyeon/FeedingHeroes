@@ -1,4 +1,15 @@
 #[macro_export]
+macro_rules! alias_field {
+    ($struct_name:ident, $field:ident, $alias:ident) => {
+        impl $struct_name {
+            pub fn $alias(&self) -> &<_ as std::ops::Deref>::Target {
+                &self.$field
+            }
+        }
+    };
+}
+
+#[macro_export]
 macro_rules! define_api {
     (
         $prefix:ident {
