@@ -1,6 +1,7 @@
 mod macros;
-pub mod oauth2;
 pub mod acnt;
+pub mod oauth2;
+pub mod ordr;
 
 use std::fmt::Debug;
 use std::collections::HashMap;
